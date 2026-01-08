@@ -1,0 +1,29 @@
+{
+  "name": "Change cross-seed categories",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "category": {
+      "enabled": true,
+      "category": "tv",
+      "condition": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "sonarr.cross"
+          },
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "tv.cross"
+          }
+        ]
+      }
+    }
+  }
+}

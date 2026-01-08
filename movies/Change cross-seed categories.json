@@ -1,0 +1,29 @@
+{
+  "name": "Change cross-seed categories",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "category": {
+      "enabled": true,
+      "category": "movies",
+      "condition": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "movies.cross"
+          },
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "radarr.cross"
+          }
+        ]
+      }
+    }
+  }
+}

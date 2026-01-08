@@ -1,0 +1,40 @@
+{
+  "name": "Low free disk space",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "delete": {
+      "enabled": true,
+      "mode": "deleteWithFiles",
+      "condition": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "field": "COMPLETION_ON_AGE",
+            "operator": "GREATER_THAN",
+            "value": "23760000"
+          },
+          {
+            "field": "STATE",
+            "operator": "EQUAL",
+            "value": "completed"
+          },
+          {
+            "field": "FREE_SPACE",
+            "operator": "LESS_THAN",
+            "value": "5497558138880"
+          },
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "tier2"
+          }
+        ]
+      }
+    }
+  },
+  "intervalSeconds": 14400
+}

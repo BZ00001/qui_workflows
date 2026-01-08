@@ -1,0 +1,45 @@
+{
+  "name": "Tier 2 - delete",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "delete": {
+      "enabled": true,
+      "mode": "deleteWithFilesPreserveCrossSeeds",
+      "condition": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "tier2"
+          },
+          {
+            "field": "TAGS",
+            "operator": "CONTAINS",
+            "value": "noHL"
+          },
+          {
+            "field": "SEEDING_TIME",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "25920000"
+          },
+          {
+            "field": "LAST_ACTIVITY_AGE",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "43200"
+          },
+          {
+            "field": "NUM_SEEDS",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "3"
+          }
+        ]
+      }
+    }
+  },
+  "intervalSeconds": 14400
+}

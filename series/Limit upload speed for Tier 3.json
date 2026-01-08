@@ -1,0 +1,30 @@
+{
+  "name": "Limit upload speed for Tier 3",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "speedLimits": {
+      "enabled": true,
+      "uploadKiB": 5120,
+      "condition": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "tier3"
+          },
+          {
+            "field": "RATIO",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "2"
+          }
+        ]
+      }
+    }
+  },
+  "intervalSeconds": 1800
+}
