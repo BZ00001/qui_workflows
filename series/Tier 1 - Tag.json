@@ -1,0 +1,24 @@
+{
+  "name": "Tier 1 - Tag",
+  "trackerPattern": "aither.cc,tracker.beyond-hd.me,blutopia.cc,landof.tv,tracker.hdbits.org,tracker.morethantv.me,tracker.nebulance.io,please.passthepopcorn.me",
+  "trackerDomains": [
+    "aither.cc",
+    "tracker.beyond-hd.me",
+    "blutopia.cc",
+    "landof.tv",
+    "tracker.hdbits.org",
+    "tracker.morethantv.me",
+    "tracker.nebulance.io",
+    "please.passthepopcorn.me"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "tag": {
+      "enabled": true,
+      "tags": [
+        "tier1"
+      ],
+      "mode": "full"
+    }
+  }
+}
