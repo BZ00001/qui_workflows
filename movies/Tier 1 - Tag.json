@@ -1,15 +1,8 @@
 {
   "name": "Tier 1 - Tag",
-  "trackerPattern": "aither.cc,tracker.beyond-hd.me,blutopia.cc,landof.tv,tracker.hdbits.org,tracker.morethantv.me,please.passthepopcorn.me,tracker.anthelion.me",
+  "trackerPattern": "tracker_1",
   "trackerDomains": [
-    "aither.cc",
-    "tracker.beyond-hd.me",
-    "blutopia.cc",
-    "landof.tv",
-    "tracker.hdbits.org",
-    "tracker.morethantv.me",
-    "please.passthepopcorn.me",
-    "tracker.anthelion.me"
+    "tracker.xyz"
   ],
   "conditions": {
     "schemaVersion": "1",

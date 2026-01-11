@@ -13,11 +13,6 @@
         "operator": "AND",
         "conditions": [
           {
-            "field": "STATE",
-            "operator": "EQUAL",
-            "value": "stopped"
-          },
-          {
             "field": "TAGS",
             "operator": "EQUAL",
             "value": "cross-seed"
@@ -36,6 +31,21 @@
             "field": "ADDED_ON_AGE",
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "1800"
+          },
+          {
+            "operator": "OR",
+            "conditions": [
+              {
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "stopped"
+              },
+              {
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "stalled"
+              }
+            ]
           }
         ]
       }

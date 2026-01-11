@@ -8,33 +8,24 @@
     "schemaVersion": "1",
     "delete": {
       "enabled": true,
-      "mode": "deleteWithFiles",
+      "mode": "deleteWithFilesIncludeCrossSeeds",
+      "includeHardlinks": true,
       "condition": {
         "operator": "AND",
         "conditions": [
           {
-            "field": "COMPLETION_ON_AGE",
-            "operator": "GREATER_THAN",
-            "value": "23760000"
-          },
-          {
-            "field": "STATE",
-            "operator": "EQUAL",
-            "value": "completed"
-          },
-          {
             "field": "FREE_SPACE",
-            "operator": "LESS_THAN",
-            "value": "5497558138880"
+            "operator": "LESS_THAN_OR_EQUAL",
+            "value": "10995116277760"
           },
           {
             "field": "TAGS",
             "operator": "EQUAL",
-            "value": "tier2"
+            "value": "noHL"
           }
         ]
       }
     }
   },
-  "intervalSeconds": 14400
+  "intervalSeconds": 43200
 }

@@ -1,26 +1,8 @@
 {
   "name": "Tier 3 - Tag",
-  "trackerPattern": "digitalcore.club,prxy.digitalcore.club,tracker.digitalcore.club,trackerprxy.digitalcore.club,reactor.filelist.io,reactor.thefl.org,immortalseed.me,oldtoons.world,tracker.privatehd.to,superbits.org,tracker.superbits.org,sptracker.cc,sync.td-peers.com,td.jumbohostpro.eu,tracker.torrentleech.org,tracker.tleechreload.org,127.0.0.1.stackoverflow.tech,async.empirehost.me,routing.bgp.technology",
+  "trackerPattern": "tracker_3",
   "trackerDomains": [
-    "digitalcore.club",
-    "prxy.digitalcore.club",
-    "tracker.digitalcore.club",
-    "trackerprxy.digitalcore.club",
-    "reactor.filelist.io",
-    "reactor.thefl.org",
-    "immortalseed.me",
-    "oldtoons.world",
-    "tracker.privatehd.to",
-    "superbits.org",
-    "tracker.superbits.org",
-    "sptracker.cc",
-    "sync.td-peers.com",
-    "td.jumbohostpro.eu",
-    "tracker.torrentleech.org",
-    "tracker.tleechreload.org",
-    "127.0.0.1.stackoverflow.tech",
-    "async.empirehost.me",
-    "routing.bgp.technology"
+    "tracker.xyz"
   ],
   "conditions": {
     "schemaVersion": "1",

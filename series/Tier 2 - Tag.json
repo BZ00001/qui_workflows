@@ -1,16 +1,8 @@
 {
   "name": "Tier 2 - Tag",
-  "trackerPattern": "tracker.alpharatio.cc,darkpeers.org,fearnopeer.com,hawke.uno,hdts-announce.ru,lst.gg,onlyencodes.cc,seedpool.org,upload.cx",
+  "trackerPattern": "tracker_2",
   "trackerDomains": [
-    "tracker.alpharatio.cc",
-    "darkpeers.org",
-    "fearnopeer.com",
-    "hawke.uno",
-    "hdts-announce.ru",
-    "lst.gg",
-    "onlyencodes.cc",
-    "seedpool.org",
-    "upload.cx"
+    "tracker.xyz"
   ],
   "conditions": {
     "schemaVersion": "1",
