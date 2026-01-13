@@ -1,5 +1,5 @@
 {
-  "name": "Tag Single Episodes",
+  "name": "Tag Unmatched Series",
   "trackerPattern": "*",
   "trackerDomains": [
     "*"
@@ -9,21 +9,29 @@
     "tag": {
       "enabled": true,
       "tags": [
-        "Episode"
+        "Unmatched"
       ],
       "mode": "add",
       "condition": {
-        "operator": "OR",
+        "operator": "AND",
         "conditions": [
           {
             "field": "NAME",
             "operator": "MATCHES",
-            "value": "(?i)S\\d{1,3}E\\d{1,3}"
+            "value": "(?i)S\\d{1,3}E\\d{1,3}",
+            "negate": true
           },
           {
             "field": "NAME",
             "operator": "MATCHES",
-            "value": "\\b\\d{4}\\D+\\d{2}\\D+\\d{2}\\b"
+            "value": "\\b\\d{4}\\D+\\d{2}\\D+\\d{2}\\b",
+            "negate": true
+          },
+          {
+            "field": "NAME",
+            "operator": "MATCHES",
+            "value": "(?i)(?:S\\d{1,3}|Season[\\s\\.]\\d{1,3})",
+            "negate": true
           }
         ]
       }

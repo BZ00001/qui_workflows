@@ -20,12 +20,12 @@
           {
             "field": "PROGRESS",
             "operator": "GREATER_THAN_OR_EQUAL",
-            "value": "96"
+            "value": "0.96"
           },
           {
             "field": "PROGRESS",
             "operator": "LESS_THAN",
-            "value": "100"
+            "value": "1"
           },
           {
             "field": "ADDED_ON_AGE",
@@ -50,5 +50,6 @@
         ]
       }
     }
-  }
+  },
+  "intervalSeconds": 60
 }
