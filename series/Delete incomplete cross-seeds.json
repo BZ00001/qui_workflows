@@ -13,9 +13,9 @@
         "operator": "AND",
         "conditions": [
           {
-            "field": "TAGS",
-            "operator": "EQUAL",
-            "value": "cross-seed"
+            "field": "CATEGORY",
+            "operator": "MATCHES",
+            "value": "\\bcross-seed(-link)?\\b"
           },
           {
             "field": "PROGRESS",
@@ -43,13 +43,12 @@
               {
                 "field": "STATE",
                 "operator": "EQUAL",
-                "value": "stalled"
+                "value": "stalled_downloading"
               }
             ]
           }
         ]
       }
     }
-  },
-  "intervalSeconds": 60
+  }
 }
