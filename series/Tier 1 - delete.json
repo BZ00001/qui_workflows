@@ -15,7 +15,7 @@
           {
             "field": "TAGS",
             "operator": "EQUAL",
-            "value": "tier1"
+            "value": "Tier1"
           },
           {
             "field": "TAGS",
@@ -33,7 +33,7 @@
             "value": "86400"
           },
           {
-            "field": "NUM_SEEDS",
+            "field": "NUM_COMPLETE",
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "3"
           }

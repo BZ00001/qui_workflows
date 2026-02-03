@@ -15,11 +15,11 @@
           {
             "field": "TAGS",
             "operator": "EQUAL",
-            "value": "tier2"
+            "value": "Tier2"
           },
           {
             "field": "TAGS",
-            "operator": "CONTAINS",
+            "operator": "EQUAL",
             "value": "noHL"
           },
           {
@@ -33,7 +33,7 @@
             "value": "43200"
           },
           {
-            "field": "NUM_SEEDS",
+            "field": "NUM_COMPLETE",
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "3"
           }
