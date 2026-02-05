@@ -1,5 +1,5 @@
 {
-  "name": "Move: Torrents stuck on Pre-Import Category to Post-Import Category",
+  "name": "Move torrents stuck on Pre-Import Category to Post-Import Category",
   "trackerPattern": "*",
   "trackerDomains": [
     "*"
@@ -8,7 +8,7 @@
     "schemaVersion": "1",
     "category": {
       "enabled": true,
-      "category": "tv",
+      "category": "movies",
       "includeCrossSeeds": true,
       "condition": {
         "operator": "AND",
@@ -16,7 +16,7 @@
           {
             "field": "CATEGORY",
             "operator": "EQUAL",
-            "value": "sonarr"
+            "value": "radarr"
           },
           {
             "field": "COMPLETION_ON_AGE",

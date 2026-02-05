@@ -1,5 +1,5 @@
 {
-  "name": "Tag: Torrents added more than 21 days ago so they can be excluded from cross-seed",
+  "name": "Tag torrents added more than 21 days ago so they can be excluded from cross-seed",
   "trackerPattern": "*",
   "trackerDomains": [
     "*"

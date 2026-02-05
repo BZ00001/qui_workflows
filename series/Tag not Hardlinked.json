@@ -1,5 +1,5 @@
 {
-  "name": "Tag not Hardlinked",
+  "name": "Tag: not Hardlinked",
   "trackerPattern": "*",
   "trackerDomains": [
     "*"
@@ -21,13 +21,12 @@
             "value": "outside_qbittorrent"
           },
           {
-            "field": "SEEDING_TIME",
+            "field": "COMPLETION_ON_AGE",
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "43200"
           }
         ]
       }
     }
-  },
-  "intervalSeconds": 43200
+  }
 }

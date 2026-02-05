@@ -1,5 +1,5 @@
 {
-  "name": "Move: Torrents stuck on Pre-Import Category to Post-Import Category",
+  "name": "Move torrents stuck on Pre-Import Category to Post-Import Category",
   "trackerPattern": "*",
   "trackerDomains": [
     "*"

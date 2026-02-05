@@ -1,0 +1,31 @@
+{
+  "name": "Delete: Free disk space",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "delete": {
+      "enabled": true,
+      "mode": "deleteWithFilesIncludeCrossSeeds",
+      "includeHardlinks": true,
+      "condition": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "field": "FREE_SPACE",
+            "operator": "LESS_THAN_OR_EQUAL",
+            "value": "10995116277760"
+          },
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "noHL"
+          }
+        ]
+      }
+    }
+  },
+  "intervalSeconds": 43200
+}

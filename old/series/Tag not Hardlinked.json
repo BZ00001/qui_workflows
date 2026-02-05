@@ -1,29 +1,33 @@
 {
-  "name": "Delete: unmatched",
+  "name": "Tag not Hardlinked",
   "trackerPattern": "*",
   "trackerDomains": [
     "*"
   ],
   "conditions": {
     "schemaVersion": "1",
-    "delete": {
+    "tag": {
       "enabled": true,
-      "mode": "deleteWithFilesPreserveCrossSeeds",
+      "tags": [
+        "noHL"
+      ],
+      "mode": "full",
       "condition": {
         "operator": "AND",
         "conditions": [
           {
-            "field": "TAGS",
-            "operator": "EQUAL",
-            "value": "Unmatched "
+            "field": "HARDLINK_SCOPE",
+            "operator": "NOT_EQUAL",
+            "value": "outside_qbittorrent"
           },
           {
             "field": "SEEDING_TIME",
             "operator": "GREATER_THAN_OR_EQUAL",
-            "value": "1814400"
+            "value": "43200"
           }
         ]
       }
     }
-  }
+  },
+  "intervalSeconds": 43200
 }
