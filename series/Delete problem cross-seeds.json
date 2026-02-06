@@ -14,8 +14,8 @@
         "conditions": [
           {
             "field": "CATEGORY",
-            "operator": "MATCHES",
-            "value": "\\bcross-seed(-link)?\\b"
+            "operator": "EQUAL",
+            "value": "cross-seed"
           },
           {
             "field": "ADDED_ON_AGE",
@@ -54,21 +54,27 @@
                     "value": "1"
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "operator": "OR",
+            "conditions": [
+              {
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "errored"
               },
               {
-                "operator": "OR",
-                "conditions": [
-                  {
-                    "field": "STATE",
-                    "operator": "EQUAL",
-                    "value": "errored"
-                  }
-                ]
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "missingFiles"
               }
             ]
           }
         ]
       }
     }
-  }
+  },
+  "intervalSeconds": 3600
 }
