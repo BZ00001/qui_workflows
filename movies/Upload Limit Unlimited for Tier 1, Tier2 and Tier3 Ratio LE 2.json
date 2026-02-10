@@ -1,0 +1,45 @@
+{
+  "name": "Upload Limit: Unlimited for Tier 1, Tier2 and Tier3 < Ratio 2",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "speedLimits": {
+      "enabled": true,
+      "uploadKiB": 0,
+      "condition": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier1"
+          },
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier2"
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "field": "TAGS",
+                "operator": "EQUAL",
+                "value": "Tier3"
+              },
+              {
+                "field": "RATIO",
+                "operator": "LESS_THAN_OR_EQUAL",
+                "value": "2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "intervalSeconds": 86400
+}

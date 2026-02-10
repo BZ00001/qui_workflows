@@ -1,0 +1,30 @@
+{
+  "name": "Upload Limit: Tier 3 Ratio > 2",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "speedLimits": {
+      "enabled": true,
+      "uploadKiB": 2048,
+      "condition": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "Tier3"
+          },
+          {
+            "field": "RATIO",
+            "operator": "GREATER_THAN",
+            "value": "2"
+          }
+        ]
+      }
+    }
+  },
+  "intervalSeconds": 1800
+}
