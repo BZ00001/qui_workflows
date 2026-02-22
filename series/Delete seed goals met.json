@@ -31,7 +31,7 @@
                 "value": "30240000"
               },
               {
-                "field": "LAST_ACTIVITY_AGE",
+                "field": "LAST_ACTIVITY",
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "86400"
               },
@@ -61,7 +61,7 @@
                 "value": "25920000"
               },
               {
-                "field": "LAST_ACTIVITY_AGE",
+                "field": "LAST_ACTIVITY",
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "43200"
               },
@@ -88,7 +88,7 @@
               {
                 "field": "SEEDING_TIME",
                 "operator": "GREATER_THAN_OR_EQUAL",
-                "value": "1814400"
+                "value": "2592000"
               }
             ]
           }

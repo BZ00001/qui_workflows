@@ -23,8 +23,8 @@
             "value": "tracker_down"
           },
           {
-            "field": "ADDED_ON_AGE",
-            "operator": "GREATER_THAN",
+            "field": "ADDED_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
             "value": "3600"
           },
           {
