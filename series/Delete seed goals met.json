@@ -26,7 +26,7 @@
                 "value": "noHL"
               },
               {
-                "field": "SEEDING_TIME",
+                "field": "COMPLETION_ON",
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "30240000"
               },
@@ -56,7 +56,7 @@
                 "value": "noHL"
               },
               {
-                "field": "SEEDING_TIME",
+                "field": "ADDED_ON",
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "25920000"
               },
@@ -86,9 +86,34 @@
                 "value": "noHL"
               },
               {
-                "field": "SEEDING_TIME",
+                "field": "COMPLETION_ON",
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "2592000"
+              },
+              {
+                "field": "SEEDING_TIME",
+                "operator": "GREATER_THAN_OR_EQUAL",
+                "value": "1209600"
+              }
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "field": "TAGS",
+                "operator": "EQUAL",
+                "value": "Unmatched"
+              },
+              {
+                "field": "COMPLETION_ON",
+                "operator": "GREATER_THAN_OR_EQUAL",
+                "value": "1814400"
+              },
+              {
+                "field": "SEEDING_TIME",
+                "operator": "GREATER_THAN_OR_EQUAL",
+                "value": "864000"
               }
             ]
           }
