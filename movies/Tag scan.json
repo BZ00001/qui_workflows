@@ -1,0 +1,76 @@
+{
+  "name": "Tag: scan",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
+  "conditions": {
+    "schemaVersion": "1",
+    "tag": {
+      "enabled": true,
+      "tags": [
+        "scan"
+      ],
+      "mode": "full",
+      "condition": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "movies"
+          },
+          {
+            "field": "TAGS",
+            "operator": "NOT_CONTAINS",
+            "value": "noHL"
+          },
+          {
+            "field": "TAGS",
+            "operator": "NOT_CONTAINS",
+            "value": "cross-seed"
+          },
+          {
+            "field": "ADDED_ON",
+            "operator": "LESS_THAN_OR_EQUAL",
+            "value": "5184000"
+          }
+        ]
+      }
+    },
+    "tags": [
+      {
+        "enabled": true,
+        "tags": [
+          "scan"
+        ],
+        "mode": "full",
+        "condition": {
+          "operator": "AND",
+          "conditions": [
+            {
+              "field": "CATEGORY",
+              "operator": "EQUAL",
+              "value": "movies"
+            },
+            {
+              "field": "TAGS",
+              "operator": "NOT_CONTAINS",
+              "value": "noHL"
+            },
+            {
+              "field": "TAGS",
+              "operator": "NOT_CONTAINS",
+              "value": "cross-seed"
+            },
+            {
+              "field": "ADDED_ON",
+              "operator": "LESS_THAN_OR_EQUAL",
+              "value": "5184000"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
