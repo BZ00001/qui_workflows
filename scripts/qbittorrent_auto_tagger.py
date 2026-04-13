@@ -47,7 +47,7 @@ RETRY_DELAY  = 2    # flat delay between retries (seconds)
 # Worst-case runtime: HTTP_RETRIES * (HTTP_TIMEOUT + RETRY_DELAY) = ~15s
 
 # Optional: Discord webhook URL for error notifications (leave empty to disable)
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1491358620292612196/hoTHAB1QLKGNkXP6SyKU-JWED2crQKYRwIpP7qNZM-ufKahKjN5Dzb8h9Koaln2MWHyK"
+DISCORD_WEBHOOK_URL = ""
 
 RULES = [
     {
