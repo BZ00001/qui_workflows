@@ -39,6 +39,46 @@
                 "field": "NUM_COMPLETE",
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "3"
+              },
+              {
+                "field": "TRACKER",
+                "operator": "NOT_EQUAL",
+                "value": "HDBits"
+              }
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "field": "TAGS",
+                "operator": "EQUAL",
+                "value": "Tier1"
+              },
+              {
+                "field": "TAGS",
+                "operator": "EQUAL",
+                "value": "noHL"
+              },
+              {
+                "field": "COMPLETION_ON",
+                "operator": "GREATER_THAN_OR_EQUAL",
+                "value": "30240000"
+              },
+              {
+                "field": "LAST_ACTIVITY",
+                "operator": "GREATER_THAN_OR_EQUAL",
+                "value": "86400"
+              },
+              {
+                "field": "NUM_INCOMPLETE",
+                "operator": "GREATER_THAN_OR_EQUAL",
+                "value": "3"
+              },
+              {
+                "field": "TRACKER",
+                "operator": "EQUAL",
+                "value": "HDBits"
               }
             ]
           },
@@ -88,12 +128,12 @@
               {
                 "field": "COMPLETION_ON",
                 "operator": "GREATER_THAN_OR_EQUAL",
-                "value": "2592000"
+                "value": "1814400"
               },
               {
                 "field": "SEEDING_TIME",
                 "operator": "GREATER_THAN_OR_EQUAL",
-                "value": "1209600"
+                "value": "864000"
               }
             ]
           },
