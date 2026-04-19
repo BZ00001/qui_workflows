@@ -4,6 +4,12 @@ All notable changes to this automations repository are documented here. This fil
 
 ## 2026-04-19
 
+### Updated
+- `tag-not-hardlinked` (series) — Tag: not Hardlinked
+- `tag-not-hardlinked` (movies) — Tag: not Hardlinked
+
+## 2026-04-19
+
 ### Added
 - `tag-tier1` (series) — Tag: Tier 1
 - `tag-tier2` (series) — Tag: Tier 2
