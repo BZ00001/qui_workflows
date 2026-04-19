@@ -1,9 +1,17 @@
 {
-  "_slug": "move-torrents-stuck-on-pre-import-category-to-post-import-category",
+  "name": "Move: Torrents stuck on Pre-Import Category to Post-Import Category",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
+    "schemaVersion": "1",
     "category": {
+      "enabled": true,
       "category": "movies",
+      "includeCrossSeeds": true,
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "CATEGORY",
@@ -11,23 +19,13 @@
             "value": "radarr"
           },
           {
-            "field": "COMPLETION_ON",
+            "field": "COMPLETION_ON_AGE",
             "operator": "GREATER_THAN_OR_EQUAL",
-            "value": "14400"
+            "value": "21600"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "includeCrossSeeds": true
-    },
-    "schemaVersion": "1"
+        ]
+      }
+    }
   },
-  "intervalSeconds": 3600,
-  "name": "Move: Torrents stuck on Pre-Import Category to Post-Import Category",
-  "sortOrder": 12,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "intervalSeconds": 3600
 }
