@@ -1,0 +1,33 @@
+{
+  "_slug": "delete-free-disk-space",
+  "conditions": {
+    "delete": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "FREE_SPACE",
+            "operator": "LESS_THAN_OR_EQUAL",
+            "value": "10995116277760"
+          },
+          {
+            "field": "TAGS",
+            "operator": "EQUAL",
+            "value": "noHL"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "includeHardlinks": true,
+      "mode": "deleteWithFilesIncludeCrossSeeds"
+    },
+    "schemaVersion": "1"
+  },
+  "intervalSeconds": 43200,
+  "name": "Delete: Free disk space",
+  "sortOrder": 18,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

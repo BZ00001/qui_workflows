@@ -1,0 +1,33 @@
+{
+  "_slug": "move-torrents-stuck-on-pre-import-category-to-post-import-category",
+  "conditions": {
+    "category": {
+      "category": "tv",
+      "condition": {
+        "conditions": [
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "sonarr"
+          },
+          {
+            "field": "COMPLETION_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "14400"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "includeCrossSeeds": true
+    },
+    "schemaVersion": "1"
+  },
+  "intervalSeconds": 3600,
+  "name": "Move: Torrents stuck on Pre-Import Category to Post-Import Category",
+  "sortOrder": 15,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

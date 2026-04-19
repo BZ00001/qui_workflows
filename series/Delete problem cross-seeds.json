@@ -1,0 +1,67 @@
+{
+  "_slug": "delete-problem-cross-seeds",
+  "conditions": {
+    "delete": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "CATEGORY",
+            "operator": "EQUAL",
+            "value": "cross-seed"
+          },
+          {
+            "field": "STATE",
+            "operator": "NOT_EQUAL",
+            "value": "tracker_down"
+          },
+          {
+            "field": "ADDED_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "3600"
+          },
+          {
+            "conditions": [
+              {
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "missingFiles"
+              },
+              {
+                "field": "STATE",
+                "operator": "EQUAL",
+                "value": "stalled_downloading"
+              },
+              {
+                "conditions": [
+                  {
+                    "field": "STATE",
+                    "operator": "EQUAL",
+                    "value": "stopped"
+                  },
+                  {
+                    "field": "ADDED_ON",
+                    "operator": "GREATER_THAN",
+                    "value": "3600"
+                  }
+                ],
+                "operator": "AND"
+              }
+            ],
+            "operator": "OR"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "deleteWithFilesPreserveCrossSeeds"
+    },
+    "schemaVersion": "1"
+  },
+  "intervalSeconds": 3600,
+  "name": "Delete: problem cross-seeds",
+  "sortOrder": 10,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

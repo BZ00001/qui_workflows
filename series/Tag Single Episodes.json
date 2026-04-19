@@ -1,0 +1,59 @@
+{
+  "_slug": "tag-single-episodes",
+  "conditions": {
+    "schemaVersion": "1",
+    "tag": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "NAME",
+            "operator": "MATCHES",
+            "value": "(?i)S\\d{1,3}E\\d{1,3}"
+          },
+          {
+            "field": "NAME",
+            "operator": "MATCHES",
+            "value": "\\b\\d{4}\\D+\\d{2}\\D+\\d{2}\\b"
+          }
+        ],
+        "operator": "OR"
+      },
+      "enabled": true,
+      "mode": "add",
+      "tags": [
+        "Episode"
+      ]
+    },
+    "tags": [
+      {
+        "condition": {
+          "conditions": [
+            {
+              "field": "NAME",
+              "operator": "MATCHES",
+              "value": "(?i)S\\d{1,3}E\\d{1,3}"
+            },
+            {
+              "field": "NAME",
+              "operator": "MATCHES",
+              "value": "\\b\\d{4}\\D+\\d{2}\\D+\\d{2}\\b"
+            }
+          ],
+          "operator": "OR"
+        },
+        "enabled": true,
+        "mode": "add",
+        "tags": [
+          "Episode"
+        ]
+      }
+    ]
+  },
+  "intervalSeconds": 86400,
+  "name": "Tag: Single Episodes",
+  "sortOrder": 5,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

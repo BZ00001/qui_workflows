@@ -1,0 +1,37 @@
+{
+  "_slug": "delete-stalled-downloads",
+  "conditions": {
+    "delete": {
+      "condition": {
+        "conditions": [
+          {
+            "field": "STATE",
+            "operator": "EQUAL",
+            "value": "stalled_downloading"
+          },
+          {
+            "field": "ADDED_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "14400"
+          },
+          {
+            "field": "PROGRESS",
+            "operator": "LESS_THAN",
+            "value": "0.095"
+          }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "deleteWithFilesIncludeCrossSeeds"
+    },
+    "schemaVersion": "1"
+  },
+  "intervalSeconds": 3600,
+  "name": "Delete stalled downloads",
+  "sortOrder": 9,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
+}

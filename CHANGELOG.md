@@ -4,6 +4,43 @@ All notable changes to this automations repository are documented here. This fil
 
 ## 2026-04-19
 
+### Added
+- `tag-tier1` (series) — Tag: Tier 1
+- `tag-tier2` (series) — Tag: Tier 2
+- `tag-tier3` (series) — Tag: Tier 3
+- `tag-not-hardlinked` (series) — Tag: not Hardlinked
+- `tag-single-episodes` (series) — Tag: Single Episodes
+- `tag-season-pack` (series) — Tag: Season Pack
+- `tag-unmatched-series` (series) — Tag: Unmatched Series
+- `tag-scan` (series) — Tag: scan
+- `delete-unregistered-torrents` (series) — Delete: unregistered torrents
+- `delete-problem-cross-seeds` (series) — Delete: problem cross-seeds
+- `delete-seed-goals-met` (series) — Delete: seed goals met
+- `delete-stalled-downloads` (series) — Delete stalled downloads
+- `upload-limit-unlimited-for-tier1-tier2-and-tier3-ratio-2` (series) — Upload Limit: Unlimited for Tier 1, Tier2 and Tier3 < Ratio 2
+- `upload-limit-tier3-ratio-2` (series) — Upload Limit: Tier 3 Ratio > 2
+- `move-torrents-stuck-on-pre-import-category-to-post-import-category` (series) — Move: Torrents stuck on Pre-Import Category to Post-Import Category
+- `force-recheck-stopped-cross-seeds-90pct` (series) — Force recheck: stopped cross-seeds (< 90%)
+- `resume-stopped-cross-seeds-90pct` (series) — Resume: stopped cross-seeds (>90%)
+- `delete-free-disk-space` (series) — Delete: Free disk space
+- `tag-tier1` (movies) — Tag: Tier 1
+- `tag-tier2` (movies) — Tag: Tier 2
+- `tag-tier3` (movies) — Tag: Tier 3
+- `tag-not-hardlinked` (movies) — Tag: not Hardlinked
+- `tag-scan` (movies) — Tag: scan
+- `delete-unregistered-torrents` (movies) — Delete: unregistered torrents
+- `delete-problem-cross-seeds` (movies) — Delete: problem cross-seeds
+- `delete-seed-goals-met` (movies) — Delete: seed goals met
+- `delete-stalled-downloads` (movies) — Delete stalled downloads
+- `upload-limit-unlimited-for-tier1-tier2-and-tier3-ratio-2` (movies) — Upload Limit: Unlimited for Tier 1, Tier2 and Tier3 < Ratio 2
+- `upload-limit-tier3-ratio-2` (movies) — Upload Limit: Tier 3 Ratio > 2
+- `move-torrents-stuck-on-pre-import-category-to-post-import-category` (movies) — Move: Torrents stuck on Pre-Import Category to Post-Import Category
+- `force-recheck-stopped-cross-seeds-90pct` (movies) — Force recheck: stopped cross-seeds (<90%)
+- `resume-stopped-cross-seeds-90pct` (movies) — Resume: stopped cross-seeds (>90%)
+- `delete-free-disk-space` (movies) — Delete: Free disk space
+
+## 2026-04-19
+
 ### Updated
 - `move-torrents-stuck-on-pre-import-category-to-post-import-category` (series) — Move: Torrents stuck on Pre-Import Category to Post-Import Category
 - `move-torrents-stuck-on-pre-import-category-to-post-import-category` (movies) — Move: Torrents stuck on Pre-Import Category to Post-Import Category
