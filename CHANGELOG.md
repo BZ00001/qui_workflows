@@ -4,6 +4,12 @@ All notable changes to this automations repository are documented here. This fil
 
 ## 2026-04-19
 
+### Updated
+- `move-torrents-stuck-on-pre-import-category-to-post-import-category` (series) — Move: Torrents stuck on Pre-Import Category to Post-Import Category
+- `move-torrents-stuck-on-pre-import-category-to-post-import-category` (movies) — Move: Torrents stuck on Pre-Import Category to Post-Import Category
+
+## 2026-04-19
+
 ### Added
 - `upload-limit-unlimited-for-tier1-tier2-and-tier3-ratio-2` (series) — Upload Limit: Unlimited for Tier 1, Tier2 and Tier3 < Ratio 2
 - `upload-limit-tier3-ratio-2` (series) — Upload Limit: Tier 3 Ratio > 2
