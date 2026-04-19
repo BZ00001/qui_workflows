@@ -1,16 +1,8 @@
 {
-  "name": "Delete stalled downloads",
-  "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "_slug": "delete-stalled-downloads",
   "conditions": {
-    "schemaVersion": "1",
     "delete": {
-      "enabled": true,
-      "mode": "deleteWithFilesIncludeCrossSeeds",
       "condition": {
-        "operator": "AND",
         "conditions": [
           {
             "field": "STATE",
@@ -27,9 +19,19 @@
             "operator": "LESS_THAN",
             "value": "0.095"
           }
-        ]
-      }
-    }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "deleteWithFilesIncludeCrossSeeds"
+    },
+    "schemaVersion": "1"
   },
-  "intervalSeconds": 3600
+  "intervalSeconds": 3600,
+  "name": "Delete stalled downloads",
+  "sortOrder": 9,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
 }

@@ -1,19 +1,9 @@
 {
-  "name": "Tag: not Hardlinked",
-  "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "_slug": "tag-not-hardlinked",
   "conditions": {
     "schemaVersion": "1",
     "tag": {
-      "enabled": true,
-      "tags": [
-        "noHL"
-      ],
-      "mode": "full",
       "condition": {
-        "operator": "AND",
         "conditions": [
           {
             "field": "HARDLINK_SCOPE",
@@ -23,10 +13,47 @@
           {
             "field": "COMPLETION_ON_AGE",
             "operator": "GREATER_THAN_OR_EQUAL",
-            "value": "43200"
+            "value": "21600"
           }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "full",
+      "tags": [
+        "noHL"
+      ]
+    },
+    "tags": [
+      {
+        "condition": {
+          "conditions": [
+            {
+              "field": "HARDLINK_SCOPE",
+              "operator": "NOT_EQUAL",
+              "value": "outside_qbittorrent"
+            },
+            {
+              "field": "COMPLETION_ON_AGE",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "21600"
+            }
+          ],
+          "operator": "AND"
+        },
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "noHL"
         ]
       }
-    }
-  }
+    ]
+  },
+  "intervalSeconds": 900,
+  "name": "Tag: not Hardlinked",
+  "sortOrder": 4,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
 }

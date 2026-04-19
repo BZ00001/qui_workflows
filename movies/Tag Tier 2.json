@@ -1,17 +1,43 @@
 {
-  "name": "Tag: Tier 2",
-  "trackerPattern": "tracker_2",
-  "trackerDomains": [
-    "tracker.xyz"
-  ],
+  "_slug": "tag-tier2",
   "conditions": {
     "schemaVersion": "1",
     "tag": {
       "enabled": true,
+      "mode": "full",
       "tags": [
         "Tier2"
-      ],
-      "mode": "full"
-    }
-  }
+      ]
+    },
+    "tags": [
+      {
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "Tier2"
+        ]
+      },
+      {
+        "enabled": true,
+        "mode": "remove",
+        "tags": [
+          "Tier1"
+        ]
+      },
+      {
+        "enabled": true,
+        "mode": "remove",
+        "tags": [
+          "Tier3"
+        ]
+      }
+    ]
+  },
+  "intervalSeconds": 900,
+  "name": "Tag: Tier 2",
+  "sortOrder": 2,
+  "trackerDomains": [
+    "tracker.xyz"
+  ],
+  "trackerPattern": "tracker_1"
 }

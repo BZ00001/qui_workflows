@@ -1,24 +1,19 @@
 {
-  "name": "Tag: scan",
-  "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "_slug": "tag-scan",
   "conditions": {
     "schemaVersion": "1",
     "tag": {
-      "enabled": true,
-      "tags": [
-        "scan"
-      ],
-      "mode": "full",
       "condition": {
-        "operator": "AND",
         "conditions": [
           {
             "field": "CATEGORY",
             "operator": "EQUAL",
             "value": "tv"
+          },
+          {
+            "field": "TAGS",
+            "operator": "CONTAINS",
+            "value": "Season"
           },
           {
             "field": "TAGS",
@@ -31,27 +26,37 @@
             "value": "cross-seed"
           },
           {
-            "field": "ADDED_ON",
+            "field": "COMPLETION_ON",
             "operator": "LESS_THAN_OR_EQUAL",
-            "value": "5184000"
+            "value": "1209600"
+          },
+          {
+            "field": "COMPLETION_ON",
+            "operator": "GREATER_THAN_OR_EQUAL",
+            "value": "10800"
           }
-        ]
-      }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "full",
+      "tags": [
+        "scan"
+      ]
     },
     "tags": [
       {
-        "enabled": true,
-        "tags": [
-          "scan"
-        ],
-        "mode": "full",
         "condition": {
-          "operator": "AND",
           "conditions": [
             {
               "field": "CATEGORY",
               "operator": "EQUAL",
               "value": "tv"
+            },
+            {
+              "field": "TAGS",
+              "operator": "CONTAINS",
+              "value": "Season"
             },
             {
               "field": "TAGS",
@@ -64,13 +69,31 @@
               "value": "cross-seed"
             },
             {
-              "field": "ADDED_ON",
+              "field": "COMPLETION_ON",
               "operator": "LESS_THAN_OR_EQUAL",
-              "value": "5184000"
+              "value": "1209600"
+            },
+            {
+              "field": "COMPLETION_ON",
+              "operator": "GREATER_THAN_OR_EQUAL",
+              "value": "10800"
             }
-          ]
-        }
+          ],
+          "operator": "AND"
+        },
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "scan"
+        ]
       }
     ]
-  }
+  },
+  "intervalSeconds": 900,
+  "name": "Tag: scan",
+  "sortOrder": 8,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
 }

@@ -1,34 +1,30 @@
 {
-  "_slug": "delete-stalled-downloads",
+  "_slug": "move-torrents-stuck-on-pre-import-category-to-post-import-category",
   "conditions": {
-    "delete": {
+    "category": {
+      "category": "movies",
       "condition": {
         "conditions": [
           {
-            "field": "STATE",
+            "field": "CATEGORY",
             "operator": "EQUAL",
-            "value": "stalled_downloading"
+            "value": "radarr"
           },
           {
-            "field": "ADDED_ON",
+            "field": "COMPLETION_ON",
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "14400"
-          },
-          {
-            "field": "PROGRESS",
-            "operator": "LESS_THAN",
-            "value": "0.095"
           }
         ],
         "operator": "AND"
       },
       "enabled": true,
-      "mode": "deleteWithFilesIncludeCrossSeeds"
+      "includeCrossSeeds": true
     },
     "schemaVersion": "1"
   },
   "intervalSeconds": 3600,
-  "name": "Delete stalled downloads",
+  "name": "Move: Torrents stuck on Pre-Import Category to Post-Import Category",
   "sortOrder": 12,
   "trackerDomains": [
     "*"

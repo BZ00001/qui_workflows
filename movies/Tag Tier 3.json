@@ -1,17 +1,43 @@
 {
-  "name": "Tag: Tier 3",
-  "trackerPattern": "tracker_3",
-  "trackerDomains": [
-    "tracker.xyz"
-  ],
+  "_slug": "tag-tier3",
   "conditions": {
     "schemaVersion": "1",
     "tag": {
       "enabled": true,
+      "mode": "full",
       "tags": [
         "Tier3"
-      ],
-      "mode": "full"
-    }
-  }
+      ]
+    },
+    "tags": [
+      {
+        "enabled": true,
+        "mode": "full",
+        "tags": [
+          "Tier3"
+        ]
+      },
+      {
+        "enabled": true,
+        "mode": "remove",
+        "tags": [
+          "Tier1"
+        ]
+      },
+      {
+        "enabled": true,
+        "mode": "remove",
+        "tags": [
+          "Tier2"
+        ]
+      }
+    ]
+  },
+  "intervalSeconds": 900,
+  "name": "Tag: Tier 3",
+  "sortOrder": 3,
+  "trackerDomains": [
+    "tracker.xyz"
+  ],
+  "trackerPattern": "tracker_1"
 }

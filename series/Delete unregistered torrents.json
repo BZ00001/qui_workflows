@@ -1,16 +1,8 @@
 {
-  "name": "Delete: unregistered torrents",
-  "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "_slug": "delete-unregistered-torrents",
   "conditions": {
-    "schemaVersion": "1",
     "delete": {
-      "enabled": true,
-      "mode": "deleteWithFilesPreserveCrossSeeds",
       "condition": {
-        "operator": "AND",
         "conditions": [
           {
             "field": "IS_UNREGISTERED",
@@ -22,8 +14,19 @@
             "operator": "NOT_EQUAL",
             "value": "tracker_down"
           }
-        ]
-      }
-    }
-  }
+        ],
+        "operator": "AND"
+      },
+      "enabled": true,
+      "mode": "deleteWithFilesPreserveCrossSeeds"
+    },
+    "schemaVersion": "1"
+  },
+  "intervalSeconds": 900,
+  "name": "Delete: unregistered torrents",
+  "sortOrder": 9,
+  "trackerDomains": [
+    "*"
+  ],
+  "trackerPattern": "*"
 }
