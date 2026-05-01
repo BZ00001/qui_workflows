@@ -1,9 +1,20 @@
 {
   "_slug": "tag-scan",
+  "name": "Tag: scan",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "tag": {
+      "enabled": true,
+      "tags": [
+        "scan"
+      ],
+      "mode": "full",
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "CATEGORY",
@@ -28,25 +39,25 @@
           {
             "field": "COMPLETION_ON",
             "operator": "LESS_THAN_OR_EQUAL",
-            "value": "1209600"
+            "value": "864000"
           },
           {
             "field": "COMPLETION_ON",
             "operator": "GREATER_THAN_OR_EQUAL",
             "value": "10800"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "mode": "full",
-      "tags": [
-        "scan"
-      ]
+        ]
+      }
     },
     "tags": [
       {
+        "enabled": true,
+        "tags": [
+          "scan"
+        ],
+        "mode": "full",
         "condition": {
+          "operator": "AND",
           "conditions": [
             {
               "field": "CATEGORY",
@@ -71,29 +82,18 @@
             {
               "field": "COMPLETION_ON",
               "operator": "LESS_THAN_OR_EQUAL",
-              "value": "1209600"
+              "value": "864000"
             },
             {
               "field": "COMPLETION_ON",
               "operator": "GREATER_THAN_OR_EQUAL",
               "value": "10800"
             }
-          ],
-          "operator": "AND"
-        },
-        "enabled": true,
-        "mode": "full",
-        "tags": [
-          "scan"
-        ]
+          ]
+        }
       }
     ]
   },
   "intervalSeconds": 900,
-  "name": "Tag: scan",
-  "sortOrder": 8,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 8
 }
