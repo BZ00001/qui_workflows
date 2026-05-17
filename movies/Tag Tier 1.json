@@ -1,43 +1,29 @@
 {
   "_slug": "tag-tier1",
+  "name": "Tag: Tier 1",
+  "trackerPattern": "tracker_1",
+  "trackerDomains": [
+    "tracker.xyz"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "tag": {
       "enabled": true,
-      "mode": "full",
       "tags": [
         "Tier1"
-      ]
+      ],
+      "mode": "full"
     },
     "tags": [
       {
         "enabled": true,
-        "mode": "full",
         "tags": [
           "Tier1"
-        ]
-      },
-      {
-        "enabled": true,
-        "mode": "remove",
-        "tags": [
-          "Tier2"
-        ]
-      },
-      {
-        "enabled": true,
-        "mode": "remove",
-        "tags": [
-          "Tier3"
-        ]
+        ],
+        "mode": "full"
       }
     ]
   },
   "intervalSeconds": 900,
-  "name": "Tag: Tier 1",
-  "sortOrder": 1,
-  "trackerDomains": [
-    "tracker.xyz"
-  ],
-  "trackerPattern": "tracker_1"
+  "sortOrder": 1
 }
