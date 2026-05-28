@@ -1,9 +1,17 @@
 {
   "_slug": "upload-limit-tier3-ratio-2",
+  "name": "Upload Limit: Tier 3 Ratio > 2",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
     "schemaVersion": "1",
     "speedLimits": {
+      "enabled": true,
+      "uploadKiB": 2048,
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "TAGS",
@@ -15,18 +23,10 @@
             "operator": "GREATER_THAN",
             "value": "2"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true,
-      "uploadKiB": 2048
+        ]
+      }
     }
   },
   "intervalSeconds": 1800,
-  "name": "Upload Limit: Tier 3 Ratio > 2",
-  "sortOrder": 14,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 15
 }

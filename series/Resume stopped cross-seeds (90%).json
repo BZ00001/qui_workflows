@@ -1,8 +1,16 @@
 {
   "_slug": "resume-stopped-cross-seeds-90pct",
+  "name": "Resume: stopped cross-seeds (>90%)",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
+    "schemaVersion": "1",
     "resume": {
+      "enabled": true,
       "condition": {
+        "operator": "AND",
         "conditions": [
           {
             "field": "STATE",
@@ -24,18 +32,10 @@
             "operator": "GREATER_THAN",
             "value": "0.9"
           }
-        ],
-        "operator": "AND"
-      },
-      "enabled": true
-    },
-    "schemaVersion": "1"
+        ]
+      }
+    }
   },
   "intervalSeconds": 3600,
-  "name": "Resume: stopped cross-seeds (>90%)",
-  "sortOrder": 17,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 18
 }
