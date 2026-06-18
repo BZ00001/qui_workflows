@@ -1,10 +1,20 @@
 {
   "_slug": "delete-seed-goals-met",
+  "name": "Delete: seed goals met",
+  "trackerPattern": "*",
+  "trackerDomains": [
+    "*"
+  ],
   "conditions": {
+    "schemaVersion": "1",
     "delete": {
+      "enabled": true,
+      "mode": "deleteWithFilesPreserveCrossSeeds",
       "condition": {
+        "operator": "OR",
         "conditions": [
           {
+            "operator": "AND",
             "conditions": [
               {
                 "field": "TAGS",
@@ -36,10 +46,10 @@
                 "operator": "NOT_EQUAL",
                 "value": "HDBits"
               }
-            ],
-            "operator": "AND"
+            ]
           },
           {
+            "operator": "AND",
             "conditions": [
               {
                 "field": "TAGS",
@@ -71,10 +81,10 @@
                 "operator": "EQUAL",
                 "value": "HDBits"
               }
-            ],
-            "operator": "AND"
+            ]
           },
           {
+            "operator": "AND",
             "conditions": [
               {
                 "field": "TAGS",
@@ -101,10 +111,10 @@
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "3"
               }
-            ],
-            "operator": "AND"
+            ]
           },
           {
+            "operator": "AND",
             "conditions": [
               {
                 "field": "TAGS",
@@ -126,22 +136,12 @@
                 "operator": "GREATER_THAN_OR_EQUAL",
                 "value": "864000"
               }
-            ],
-            "operator": "AND"
+            ]
           }
-        ],
-        "operator": "OR"
-      },
-      "enabled": true,
-      "mode": "deleteWithFilesPreserveCrossSeeds"
-    },
-    "schemaVersion": "1"
+        ]
+      }
+    }
   },
   "intervalSeconds": 21600,
-  "name": "Delete: seed goals met",
-  "sortOrder": 8,
-  "trackerDomains": [
-    "*"
-  ],
-  "trackerPattern": "*"
+  "sortOrder": 9
 }
