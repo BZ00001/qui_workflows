@@ -5,6 +5,8 @@ All notable changes to this automations repository are documented here. This fil
 ## 2026-06-28
 
 ### Added
+- `delete-unregistered-torrents-2` (series) — Delete: unregistered torrents
+- `delete-stalled-downloads-2` (series) — Delete stalled downloads
 - `delete-unregistered-torrents` (movies) — Delete: unregistered torrents
 
 ### Updated
@@ -28,6 +30,7 @@ All notable changes to this automations repository are documented here. This fil
 - `delete-free-disk-space` (movies) — Delete: Free disk space
 
 ### Archived
+- `delete-unregistered-torrents-2` (movies) — Delete: unregistered torrents (moved to `archive/movies/`)
 - `delete-unregistered-torrents` (series) — Delete: unregistered torrents (moved to `archive/series/`)
 - `delete-stalled-downloads` (series) — Delete stalled downloads (moved to `archive/series/`)
 

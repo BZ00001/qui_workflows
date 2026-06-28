@@ -1,5 +1,5 @@
 {
-  "_slug": "delete-unregistered-torrents-2",
+  "_slug": "delete-unregistered-torrents",
   "name": "Delete: unregistered torrents",
   "trackerPattern": "*",
   "trackerDomains": [
@@ -11,35 +11,40 @@
       "enabled": true,
       "mode": "deleteWithFilesPreserveCrossSeeds",
       "condition": {
-        "operator": "OR",
+        "operator": "AND",
         "conditions": [
           {
-            "operator": "AND",
-            "conditions": [
-              {
-                "field": "IS_UNREGISTERED",
-                "operator": "EQUAL",
-                "value": "true"
-              },
-              {
-                "field": "STATE",
-                "operator": "NOT_EQUAL",
-                "value": "tracker_down"
-              }
-            ]
+            "field": "STATE",
+            "operator": "NOT_EQUAL",
+            "value": "tracker_down"
           },
           {
-            "operator": "AND",
+            "operator": "OR",
             "conditions": [
               {
-                "field": "STATE",
-                "operator": "EQUAL",
-                "value": "tracker_error"
+                "operator": "AND",
+                "conditions": [
+                  {
+                    "field": "IS_UNREGISTERED",
+                    "operator": "EQUAL",
+                    "value": "true"
+                  }
+                ]
               },
               {
-                "field": "TRACKER",
-                "operator": "EQUAL",
-                "value": "BeyondHD"
+                "operator": "AND",
+                "conditions": [
+                  {
+                    "field": "STATE",
+                    "operator": "EQUAL",
+                    "value": "tracker_error"
+                  },
+                  {
+                    "field": "TRACKER",
+                    "operator": "EQUAL",
+                    "value": "BeyondHD"
+                  }
+                ]
               }
             ]
           }
@@ -47,5 +52,6 @@
       }
     }
   },
+  "intervalSeconds": 900,
   "sortOrder": 6
 }
