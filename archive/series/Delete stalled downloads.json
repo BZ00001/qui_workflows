@@ -1,5 +1,5 @@
 {
-  "_slug": "delete-stalled-downloads",
+  "_slug": "delete-stalled-downloads-2",
   "name": "Delete stalled downloads",
   "trackerPattern": "*",
   "trackerDomains": [
