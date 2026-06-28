@@ -5,9 +5,9 @@ All notable changes to this automations repository are documented here. This fil
 ## 2026-06-28
 
 ### Added
+- `delete-unregistered-torrents` (movies) — Delete: unregistered torrents
 - `delete-unregistered-torrents-2` (series) — Delete: unregistered torrents
 - `delete-stalled-downloads-2` (series) — Delete stalled downloads
-- `delete-unregistered-torrents` (movies) — Delete: unregistered torrents
 
 ### Updated
 - `tag-scan` (series) — Tag: scan
