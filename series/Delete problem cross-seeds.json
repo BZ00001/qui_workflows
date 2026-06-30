@@ -58,6 +58,11 @@
                     "field": "PROGRESS",
                     "operator": "EQUAL",
                     "value": "0"
+                  },
+                  {
+                    "field": "CATEGORY",
+                    "operator": "EQUAL",
+                    "value": "tv"
                   }
                 ]
               }
