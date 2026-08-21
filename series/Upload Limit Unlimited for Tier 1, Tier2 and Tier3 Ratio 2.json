@@ -42,6 +42,6 @@
       }
     }
   },
-  "intervalSeconds": 86400,
+  "intervalSeconds": 21600,
   "sortOrder": 11
 }
