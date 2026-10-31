@@ -2,9 +2,7 @@
   "_slug": "delete-seed-goals-met",
   "name": "Delete: seed goals met",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "delete": {

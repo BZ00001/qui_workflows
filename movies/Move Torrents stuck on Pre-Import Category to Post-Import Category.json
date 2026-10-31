@@ -2,9 +2,7 @@
   "_slug": "move-torrents-stuck-on-pre-import-category-to-post-import-category",
   "name": "Move: Torrents stuck on Pre-Import Category to Post-Import Category",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "category": {

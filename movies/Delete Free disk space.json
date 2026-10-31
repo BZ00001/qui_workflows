@@ -2,9 +2,7 @@
   "_slug": "delete-free-disk-space",
   "name": "Delete: Free disk space",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "delete": {

@@ -2,9 +2,7 @@
   "_slug": "tag-tier1",
   "name": "Tag: Tier 1",
   "trackerPattern": "tracker_1",
-  "trackerDomains": [
-    "tracker.xyz"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "tag": {

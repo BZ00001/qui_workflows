@@ -2,9 +2,7 @@
   "_slug": "upload-limit-tier3-ratio-2",
   "name": "Upload Limit: Tier 3 Ratio > 2",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "speedLimits": {

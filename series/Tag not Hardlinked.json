@@ -2,9 +2,7 @@
   "_slug": "tag-not-hardlinked",
   "name": "Tag: not Hardlinked",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "tag": {

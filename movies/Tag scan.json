@@ -2,9 +2,7 @@
   "_slug": "tag-scan",
   "name": "Tag: scan",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "tag": {

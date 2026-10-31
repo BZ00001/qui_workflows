@@ -2,9 +2,7 @@
   "_slug": "upload-limit-unlimited-for-tier1-tier2-and-tier3-ratio-2",
   "name": "Upload Limit: Unlimited for Tier 1, Tier2 and Tier3 < Ratio 2",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "speedLimits": {

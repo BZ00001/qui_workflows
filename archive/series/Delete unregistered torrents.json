@@ -2,9 +2,7 @@
   "_slug": "delete-unregistered-torrents",
   "name": "Delete: unregistered torrents",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "delete": {
@@ -16,33 +14,28 @@
           {
             "field": "STATE",
             "operator": "NOT_EQUAL",
-            "value": "tracker_down"
+            "value": "stalled_downloading"
           },
           {
             "operator": "OR",
             "conditions": [
               {
-                "operator": "AND",
-                "conditions": [
-                  {
-                    "field": "IS_UNREGISTERED",
-                    "operator": "EQUAL",
-                    "value": "true"
-                  }
-                ]
+                "field": "IS_UNREGISTERED",
+                "operator": "EQUAL",
+                "value": "true"
               },
               {
                 "operator": "AND",
                 "conditions": [
                   {
+                    "field": "TRACKER",
+                    "operator": "CONTAINS",
+                    "value": "tracker.beyond-hd"
+                  },
+                  {
                     "field": "STATE",
                     "operator": "EQUAL",
                     "value": "tracker_error"
-                  },
-                  {
-                    "field": "TRACKER",
-                    "operator": "EQUAL",
-                    "value": "BeyondHD"
                   }
                 ]
               }

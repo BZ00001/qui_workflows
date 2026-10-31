@@ -2,9 +2,7 @@
   "_slug": "force-recheck-incomplete-cross-seeds",
   "name": "Force recheck: incomplete cross-seeds",
   "trackerPattern": "*",
-  "trackerDomains": [
-    "*"
-  ],
+  "trackerDomains": null,
   "conditions": {
     "schemaVersion": "1",
     "recheck": {
