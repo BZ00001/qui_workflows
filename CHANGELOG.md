@@ -4,6 +4,10 @@ All notable changes to this automations repository are documented here. This fil
 
 ## 2026-10-31
 
+### Added
+- `delete-unregistered-torrents` (series) — Delete: unregistered torrents
+- `delete-unregistered-torrents-2` (movies) — Delete: unregistered torrents
+
 ### Updated
 - `tag-tier1` (series) — Tag: Tier 1
 - `tag-tier2` (series) — Tag: Tier 2
